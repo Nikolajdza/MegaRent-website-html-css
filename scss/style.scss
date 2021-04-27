@@ -85,3 +85,25 @@ section {
     text-transform: uppercase;
     &:hover {background-color: black;}
 }
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    td, th {
+        padding: 1em;
+    }
+    thead {
+        tr { background-color: $main_red;}
+    }
+    th {
+        color: #fff;
+        &:first-child {background-color: $main_red;}
+    }
+    tbody {
+        tr {border: 1px solid $main_text_color}
+        td:first-child {background-color: $grey_background;}
+    }
+}
+
+#pricingButton { display: none;}
